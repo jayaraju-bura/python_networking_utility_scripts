@@ -1,6 +1,7 @@
 from scapy.all import *
 from time import sleep
 # This script can be used to manipulated the arp tables of target machine and gateway's
+# echo 1 > /proc/sys/net/ipv4/ip_forward run this on attacker host so that it will attacker host to send packets from target to gateway router
 
 def get_mac(ip_address):
     arp_request = ARP(pdst=ip_address)
@@ -35,7 +36,7 @@ def poison_arp_cache(src_ip, dst_ip):
         print("Ctrl + C pressed.............Exiting")
         restore_original_arp(src_ip, dst_ip)
         restore_original_arp(dst_ip, src_ip)
-        print("\n Arp Spoof Program Stopped")
+        print("\n Arp Spoof Program Stopped and Cache Restored")
         
 
    
