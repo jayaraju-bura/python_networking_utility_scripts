@@ -5,8 +5,8 @@ from scapy.volatile import RandShort
 
 
 # start a python server using this command 
-# jayaraju@jayaraju-mac ~ % python3 -m http.server 8000
-# Serving HTTP on :: port 8000 (http://[::]:8000/) ...
+# jayaraju@jayaraju-mac ~ % python3 -m http.server 443
+# Serving HTTP on :: port 443 (http://[::]:443/) ...
 # ::1 - - [01/Nov/2022 13:56:11] "GET / HTTP/1.1" 200 -
 # ::1 - - [01/Nov/2022 13:56:11] code 404, message File not found
 # ::1 - - [01/Nov/2022 13:56:11] "GET /favicon.ico HTTP/1.1" 404 -
